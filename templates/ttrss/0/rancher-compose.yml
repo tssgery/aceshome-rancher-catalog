@@ -1,5 +1,5 @@
-version: '0'
-catalog:
+version: '2'
+.catalog:
   name: "Tiny Tiny RSS"
   version: "0.1"
   description: | 
