@@ -42,4 +42,13 @@ version: '2'
       description: "What database password should be used?"
       required: true
       type: password
+    - variable: "DB_TYPE"
+      label: DB Type
+      description: "What database s used, postgres or mysql?"
+      required: true
+      default: mysql
+      type: enum
+      options:
+        - mysql
+        - pgsql
 
