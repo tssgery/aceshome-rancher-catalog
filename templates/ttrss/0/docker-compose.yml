@@ -2,7 +2,7 @@ ttrss:
   image: clue/ttrss
   restart: always
   ports:
-    - "{EXPOSED_PORT}:80"
+    - "${EXPOSED_PORT}:80"
   environment:
     DB_HOST: ${DB_HOST}
     DB_PORT: ${DB_PORT}
