@@ -1,0 +1,8 @@
+name: Tiny Tiny RSS
+description: |
+  Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible. 
+version: 0
+category: News
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://tt-rss.org/gitlab/fox/tt-rss/wikis/home

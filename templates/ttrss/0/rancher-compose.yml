@@ -1,0 +1,45 @@
+version: '0'
+catalog:
+  name: "Tiny Tiny RSS"
+  version: "0.1"
+  description: | 
+    Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, 
+    designed to allow you to read news from any location, while feeling as close to a real 
+    desktop application as possible.
+  minimum_rancher_version: v1.1.0
+  minimum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should ttrss listen on?"
+      default: 8000
+      required: true
+      type: string
+    - variable: "DB_HOST"
+      label: DB Host
+      description: "Where is the database running"
+      required: true
+      type: string
+    - variable: "DB_PORT"
+      label: DB Port
+      description: "Which port is the database listening on?"
+      default: 3306
+      required: true
+      type: string
+    - variable: "DB_NAME"
+      label: DB Name
+      description: "What database name should be used?"
+      default: db_ttrss
+      required: true
+      type: string
+    - variable: "DB_USER"
+      label: DB User
+      description: "What database user should be used?"
+      required: true
+      type: string
+    - variable: "DB_PASS"
+      label: DB Password
+      description: "What database password should be used?"
+      required: true
+      type: password
+
