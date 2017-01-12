@@ -7,7 +7,7 @@ catalog:
     designed to allow you to read news from any location, while feeling as close to a real 
     desktop application as possible.
   minimum_rancher_version: v1.1.0
-  minimum_rancher_version: v1.99.99
+  maximum_rancher_version: v1.99.99
   questions:
     - variable: "EXPOSED_PORT"
       label: Port
