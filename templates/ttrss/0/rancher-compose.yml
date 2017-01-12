@@ -1,10 +1,10 @@
 version: '2'
 .catalog:
   name: "Tiny Tiny RSS"
-  version: "0.1"
-  description: | 
-    Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, 
-    designed to allow you to read news from any location, while feeling as close to a real 
+  version: "v0.1.0"
+  description: |
+    Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator,
+    designed to allow you to read news from any location, while feeling as close to a real
     desktop application as possible.
   minimum_rancher_version: v1.1.0
   maximum_rancher_version: v1.99.99
@@ -51,4 +51,3 @@ version: '2'
       options:
         - mysql
         - pgsql
-
