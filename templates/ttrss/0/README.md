@@ -4,9 +4,9 @@ Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggreg
 #### Changelog
 
 ##### v0.1.0
-* Initial version, based on clue/ttrss
+* Initial version, based on [clue/ttrss](https://hub.docker.com/r/clue/ttrss/)
 
 #### Usage
 
 ##### Default Credentials
-After deployment, use the default credentials of admin/password, to log into ttrss. You can then go to "Actions->Preferences" and create our own users.
+After deployment, use the default credentials of admin/password, to log into ttrss. You can then go to "Actions->Preferences" and create your own users.
