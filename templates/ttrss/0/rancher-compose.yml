@@ -44,7 +44,7 @@ version: '2'
       type: password
     - variable: "DB_TYPE"
       label: DB Type
-      description: "What database s used, postgres or mysql?"
+      description: "What database is used, postgres or mysql?"
       required: true
       default: mysql
       type: enum
