@@ -1,7 +1,7 @@
 version: '2'
 .catalog:
   name: "Tiny Tiny RSS"
-  version: "v0.1.0"
+  version: "v0.2.0"
   description: |
     Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator,
     designed to allow you to read news from any location, while feeling as close to a real
@@ -51,3 +51,15 @@ version: '2'
       options:
         - mysql
         - pgsql
+
+
+ttrss:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 80
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
