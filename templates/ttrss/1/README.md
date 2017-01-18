@@ -6,6 +6,9 @@ Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggreg
 ##### v0.1.0
 * Initial version, based on [clue/ttrss](https://hub.docker.com/r/clue/ttrss/)
 
+##### v0.2.0
+* Added health check
+
 #### Usage
 
 ##### Default Credentials
