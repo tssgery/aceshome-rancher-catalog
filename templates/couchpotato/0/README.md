@@ -4,4 +4,7 @@ Awesome PVR for usenet and torrents. Just fill in what you want to see and Couch
 #### Changelog
 
 ##### v0.1.0
-* Initial version, based on [couchpotato/couchpotato](https://hub.docker.com/r/couchpotato/couchpotato/)
+* Initial version, based on [tssgery/strato-couchpotato](https://hub.docker.com/r/tssgery/strato-couchpotato/)
+
+#### Usage
+After installing, navigate to the WebUI and configure your settings
