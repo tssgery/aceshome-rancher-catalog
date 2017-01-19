@@ -1,0 +1,26 @@
+version: '2'
+.catalog:
+  name: "CouchPotato"
+  version: "v0.1.0"
+  description: |
+    Couches are cool.
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should couchpotato listen on?"
+      default: 5050
+      required: true
+      type: string
+
+couchpotato:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 5050
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2

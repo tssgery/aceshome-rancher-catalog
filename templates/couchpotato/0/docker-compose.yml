@@ -1,0 +1,5 @@
+couchpotato:
+  image: couchpotato/couchpotato
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:5050"
