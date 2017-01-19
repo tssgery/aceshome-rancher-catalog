@@ -3,3 +3,6 @@ couchpotato:
   restart: always
   ports:
     - "${EXPOSED_PORT}:5050"
+  volumes:
+    - "${DATADIR}:/datadir"
+    - "${MEDIADIR}:/media"
