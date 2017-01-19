@@ -1,8 +1,9 @@
 couchpotato:
-  image: mediadepot/couchpotato:master
+  image: tssgery/strato-couchpotato:latest
   restart: always
   ports:
     - "${EXPOSED_PORT}:5050"
   volumes:
-    - "${DATADIR}:/datadir"
-    - "${MEDIADIR}:/media"
+    - "${CONFIGDIR}:/config"
+    - "${VIDEODIR}:/videos"
+    - "${DOWNLOADDIR}:/downloads"

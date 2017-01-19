@@ -13,14 +13,19 @@ version: '2'
       default: 5050
       required: true
       type: string
-    - variable: "DATADIR"
-      label: Data Volume
+    - variable: "CONFIGDIR"
+      label: Config Volume
       description: "Volume on which to store configuration data"
       required: true
       type: string
-    - variable: "MEDIADIR"
-      label: Media Volume
+    - variable: "VIDEODIR"
+      label: Video Volume
       description: "Volume on which to store media"
+      required: true
+      type: string
+    - variable: "DOWNLOADDIR"
+      label: Downloads Volume
+      description: "Volume where downloads are placed by a downloader"
       required: true
       type: string
 
