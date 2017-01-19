@@ -13,6 +13,16 @@ version: '2'
       default: 5050
       required: true
       type: string
+    - variable: "DATADIR"
+      label: Data Volume
+      description: "Volume on which to store configuration data"
+      required: true
+      type: string
+    - variable: "MEDIADIR"
+      label: Media Volume
+      description: "Volume on which to store media"
+      required: true
+      type: string
 
 couchpotato:
   scale: 1
