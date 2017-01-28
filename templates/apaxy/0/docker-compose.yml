@@ -1,0 +1,7 @@
+ttrss:
+  image: tssgery/strato-apaxy
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:80"
+  volumes:
+    - "${SHARED}:/samba"
