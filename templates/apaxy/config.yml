@@ -1,7 +1,7 @@
 name: Apaxy
 description: |
   Apache server with Apaxy, shows file listings in a pretty format
-version: "v0.1.0"
+version: "0.1.0"
 category: Web
 maintainer: Eric Young
 license: Apache, v2

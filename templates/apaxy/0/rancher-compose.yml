@@ -1,7 +1,7 @@
 version: '2'
 .catalog:
   name: "Apache|Apaxy"
-  version: "v0.1.0"
+  version: "0.1.0"
   description: |
     Apaxy is a simple addition that allows Apache to display file listsings
     in a visually nice manner. SHA256 sums are automatically calculated

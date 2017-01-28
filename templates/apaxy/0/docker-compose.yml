@@ -1,5 +1,5 @@
 ttrss:
-  image: tssgery/strato-apaxy
+  image: tssgery/strato-apaxy:0.1.0
   restart: always
   ports:
     - "${EXPOSED_PORT}:80"
