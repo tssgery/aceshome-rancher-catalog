@@ -3,7 +3,8 @@ version: '2'
   name: "Sickrage"
   version: "0.1.0"
   description: |
-    This is sick.
+    Automatic Video Library Manager for TV Shows. It watches for new episodes
+    of your favorite shows, and when they are posted it does its magic..
   minimum_rancher_version: v1.1.0
   maximum_rancher_version: v1.99.99
   questions:
