@@ -1,5 +1,5 @@
 couchpotato:
-  image: tssgery/strato-couchpotato:0.1.0
+  image: stratolinux/couchpotato:0.1.0
   restart: always
   ports:
     - "${EXPOSED_PORT}:5050"
