@@ -3,7 +3,8 @@ version: '2'
   name: "CouchPotato"
   version: "0.1.0"
   description: |
-    Couches are cool.
+    Download movies automatically, easily and in the best quality as
+    soon as they are available
   minimum_rancher_version: v1.1.0
   maximum_rancher_version: v1.99.99
   questions:
