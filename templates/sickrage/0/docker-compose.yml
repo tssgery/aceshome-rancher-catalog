@@ -1,0 +1,9 @@
+couchpotato:
+  image: stratolinux/sickrage:0.1.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:8081"
+  volumes:
+    - "${CONFIGDIR}:/config"
+    - "${VIDEODIR}:/videos"
+    - "${DOWNLOADDIR}:/downloads"
