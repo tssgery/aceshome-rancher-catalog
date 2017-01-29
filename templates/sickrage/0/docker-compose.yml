@@ -1,4 +1,4 @@
-couchpotato:
+sickrage:
   image: stratolinux/sickrage:0.1.0
   restart: always
   ports:
