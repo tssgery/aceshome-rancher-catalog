@@ -1,0 +1,8 @@
+name: SABnzbd
+description: |
+  Free and easy binary newsreader.
+version: "0.1.0"
+category: Media
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://sickrage.github.io

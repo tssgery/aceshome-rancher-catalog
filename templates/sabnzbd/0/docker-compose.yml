@@ -1,0 +1,8 @@
+sabnzbd:
+  image: stratolinux/sabnzbd:0.1.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:8080"
+  volumes:
+    - "${CONFIGDIR}:/config"
+    - "${DOWNLOADDIR}:/downloads"

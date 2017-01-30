@@ -1,0 +1,36 @@
+version: '2'
+.catalog:
+  name: "SABnzbd"
+  version: "0.1.0"
+  description: |
+    Free and easy binary newsreader
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should sickrage listen on?"
+      default: 8081
+      required: true
+      type: string
+    - variable: "CONFIGDIR"
+      label: Config Volume
+      description: "Volume on which to store configuration data"
+      required: true
+      type: string
+    - variable: "DOWNLOADDIR"
+      label: Downloads Volume
+      description: "Volume where downloads are placed"
+      required: true
+      type: string
+
+sabnzbd:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8080
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
