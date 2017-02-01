@@ -1,0 +1,9 @@
+mylar:
+  image: stratolinux/mylar:0.1.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:8090"
+  volumes:
+    - "${CONFIGDIR}:/config"
+    - "${COMICSDIR}:/comics"
+    - "${DOWNLOADDIR}:/downloads"
