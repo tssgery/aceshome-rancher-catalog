@@ -11,7 +11,7 @@ version: '2'
     - variable: "EXPOSED_PORT"
       label: Port
       description: "Which port should sickrage listen on?"
-      default: 8081
+      default: 8090
       required: true
       type: string
     - variable: "CONFIGDIR"
