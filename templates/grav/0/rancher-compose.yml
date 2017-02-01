@@ -1,17 +1,15 @@
 version: '2'
 .catalog:
-  name: "Apache|Apaxy"
+  name: "Apache|Grav"
   version: "0.1.0"
   description: |
-    Apaxy is a simple addition that allows Apache to display file listsings
-    in a visually nice manner. SHA256 sums are automatically calculated
-    every 30 minutes
+    Grav is a Fast, Simple, and Flexible file-based Web-platform.
   minimum_rancher_version: v1.1.0
   maximum_rancher_version: v1.99.99
   questions:
     - variable: "EXPOSED_PORT"
       label: Port
-      description: "Which port should Apache listen on?"
+      description: "Which port should Grav should be available?"
       default: 8000
       required: true
       type: string

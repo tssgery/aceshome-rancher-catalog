@@ -1,0 +1,8 @@
+name: Grav
+description: |
+  Grav is a modern open source flat-file CMS
+version: "0.1.0"
+category: Web
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://github.com/stratolinux/grav

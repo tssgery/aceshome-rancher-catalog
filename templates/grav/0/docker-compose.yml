@@ -1,0 +1,7 @@
+grav:
+  image: stratolinux/grav:0.1.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:80"
+  volumes:
+    - "${SHARED}:/var/www/html"

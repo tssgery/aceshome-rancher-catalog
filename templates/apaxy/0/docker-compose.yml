@@ -1,4 +1,4 @@
-ttrss:
+apaxy:
   image: stratolinux/apaxy:0.1.0
   restart: always
   ports:
