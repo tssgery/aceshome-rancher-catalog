@@ -15,6 +15,6 @@ version: '2'
       type: string
     - variable: "SHARED"
       label: Volume
-      description: "If supplied, volume to populate with Grav and content"
+      description: "Volume to servce content from. If supplied, the volume should be empty"
       required: false
       type: string
