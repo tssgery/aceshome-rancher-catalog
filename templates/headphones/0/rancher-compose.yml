@@ -1,0 +1,43 @@
+version: '2'
+.catalog:
+  name: "Headphones"
+  version: "0.1.0"
+  description: |
+    Headphones is an automated music downloader for NZB and Torrent,
+    written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent,
+    Deluge and Blackhole.
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should sickrage listen on?"
+      default: 8181
+      required: true
+      type: string
+    - variable: "CONFIGDIR"
+      label: Config Volume
+      description: "Volume on which to store configuration data"
+      required: true
+      type: string
+    - variable: "MUSICDIR"
+      label: Music Volume
+      description: "Volume on which to store music"
+      required: true
+      type: string
+    - variable: "DOWNLOADDIR"
+      label: Downloads Volume
+      description: "Volume where downloads are placed by a downloader"
+      required: true
+      type: string
+
+headphones:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8181
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2

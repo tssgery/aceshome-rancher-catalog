@@ -1,0 +1,10 @@
+name: Headphones
+description: |
+  Headphones is an automated music downloader for NZB and Torrent, written in
+  Python. It supports SABnzbd, NZBget, Transmission, µTorrent, Deluge
+  and Blackhole.
+version: "0.1.0"
+category: Media
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://github.com/rembo10/headphones

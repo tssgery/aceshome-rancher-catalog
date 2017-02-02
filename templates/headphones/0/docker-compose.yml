@@ -1,0 +1,9 @@
+headphones:
+  image: stratolinux/headphones:0.1.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:8181"
+  volumes:
+    - "${CONFIGDIR}:/config"
+    - "${MUSICDIR}:/music"
+    - "${DOWNLOADDIR}:/downloads"
