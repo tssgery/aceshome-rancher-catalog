@@ -1,0 +1,22 @@
+version: '2'
+.catalog:
+  name: "Apache|Apaxy"
+  version: "0.2.0"
+  description: |
+    Apaxy is a simple addition that allows Apache to display file listsings
+    in a visually nice manner. SHA256 sums are automatically calculated
+    every 30 minutes
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should Apache listen on?"
+      default: 8000
+      required: true
+      type: string
+    - variable: "SHARED"
+      label: Volume
+      description: "Volume which contains, or will contain content to be served"
+      required: true
+      type: string

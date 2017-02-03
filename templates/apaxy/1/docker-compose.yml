@@ -1,0 +1,7 @@
+apaxy:
+  image: stratolinux/apaxy:0.2.0
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:80"
+  volumes:
+    - "${SHARED}:/samba"
