@@ -1,7 +1,7 @@
 hdhomerun-dvr:
   image: stratolinux/hdhomerun-dvr:0.1.0
   restart: always
-  network_mode: "host"
+  net: "host"
   ports:
     - "5004:5004"
   volumes:
