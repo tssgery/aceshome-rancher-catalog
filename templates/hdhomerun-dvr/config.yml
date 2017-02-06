@@ -1,0 +1,9 @@
+name: HDHmeRun DVR
+description: |
+  The DVR reimagined.
+  Watch and Record all of your favorite live TV. Your way.
+version: "0.1.0"
+category: Media
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://www.silicondust.com/dvr-service

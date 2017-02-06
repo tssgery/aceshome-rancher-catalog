@@ -1,0 +1,26 @@
+version: '2'
+.catalog:
+  name: "HDHomeRun DVR"
+  version: "0.1.0"
+  description: |
+    The DVR reimagined.
+    Watch and Record all of your favorite live TV. Your way..
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "RECORDDIR"
+      label: Recordings Volume
+      description: "Volume on which to store recordings"
+      type: string
+
+
+hdhomerun-dvr:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 5004
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
