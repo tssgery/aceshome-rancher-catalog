@@ -1,0 +1,8 @@
+resilio-sync:
+  image: resilio/sync
+  restart: always
+    ports:
+    - "${WEBUI}:8888"
+    - "55555"
+  volumes:
+    - "${SYNCDIR}:/mnt/sync"

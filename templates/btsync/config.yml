@@ -1,0 +1,9 @@
+name: Resilio Sync
+description: |
+  Sync any folder to all your devices. Sync photos, videos, music, PDFs, docs
+  or any other file types to/from your mobile phone, laptop, or NAS.
+version: "0.1.0"
+category: Media
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://www.resilio.com

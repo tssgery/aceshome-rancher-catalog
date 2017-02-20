@@ -1,0 +1,31 @@
+version: '2'
+.catalog:
+  name: "Resilio Sync"
+  version: "0.1.0"
+  description: |
+    Sync any folder to all your devices. Sync photos, videos, music, PDFs, docs
+    or any other file types to/from your mobile phone, laptop, or NAS.
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "SYNCDIR"
+      label: Sync Volume
+      description: "Volume on which to store/share data"
+      type: string
+    - variable: "WEBUI"
+      label: Port
+      description: "Port for the Resilio Sync Web UI?"
+      default: 8888
+      required: true
+      type: string
+
+resilio-sync:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8888
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
