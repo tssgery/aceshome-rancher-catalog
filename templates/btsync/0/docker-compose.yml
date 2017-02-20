@@ -1,7 +1,7 @@
 resilio-sync:
   image: resilio/sync
   restart: always
-    ports:
+  ports:
     - "${WEBUI}:8888"
     - "55555"
   volumes:
