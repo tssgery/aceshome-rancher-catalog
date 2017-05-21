@@ -1,0 +1,5 @@
+raspberrypints:
+  image: sparklyballs/pints:latest
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:80"

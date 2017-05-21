@@ -1,0 +1,9 @@
+name: RaspberryPints
+description: |
+  A digital signage version of the common chalkboard-based taplist.
+  Based on the kegerface/kegerface
+version: "0.1.0"
+category: Media
+maintainer: Eric Young
+license: Apache, v2
+projectURL: http://raspberrypints.com/
