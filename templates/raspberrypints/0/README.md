@@ -4,7 +4,7 @@ RaspberryPints (RPints) is a digital upgrade to the conventional chalkboard tapl
 #### Changelog
 
 ##### v0.1.0
-* Initial version, based on [sparklyballs/docker-containers](https://github.com/sparklyballs/docker-containers)
+* Initial version, based on [stratolinux/pints](https://github.com/stratolinux/pints)
 
 #### Usage
 After installing, navigate to the WebUI and configure your settings
