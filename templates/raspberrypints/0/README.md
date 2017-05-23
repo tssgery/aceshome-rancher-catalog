@@ -3,6 +3,10 @@ RaspberryPints (RPints) is a digital upgrade to the conventional chalkboard tapl
 
 #### Changelog
 
+##### v0.2.0
+* Added support to add/edit/delete breweries, useful for serving commercial kegs
+* moved all Pints data to separate directory to support storage on external volume
+
 ##### v0.1.0
 * Initial version, based on [stratolinux/pints](https://github.com/stratolinux/pints)
 

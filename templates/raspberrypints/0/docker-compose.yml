@@ -3,3 +3,5 @@ raspberrypints:
   restart: always
   ports:
     - "${EXPOSED_PORT}:80"
+  volumes:
+    - "${CONFIGDIR}:/var/www/Pints/data"

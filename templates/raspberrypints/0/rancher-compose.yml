@@ -1,7 +1,7 @@
 version: '2'
 .catalog:
   name: "RaspberryPints"
-  version: "0.1.0"
+  version: "0.2.0"
   description: |
     A digital signage version of the common chalkboard-based taplist.
   minimum_rancher_version: v1.1.0
@@ -13,7 +13,12 @@ version: '2'
       default: 80
       required: true
       type: string
-
+    - variable: "CONFIGDIR"
+      label: Config Volume
+      description: "Volume on which to store configuration data"
+      required: true
+      type: string
+      
 raspberrypints:
   scale: 1
   retain_ip: true
