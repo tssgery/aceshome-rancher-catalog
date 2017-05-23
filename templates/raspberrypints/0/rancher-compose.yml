@@ -1,7 +1,7 @@
 version: '2'
 .catalog:
   name: "RaspberryPints"
-  version: "0.2.0"
+  version: "0.3.0"
   description: |
     A digital signage version of the common chalkboard-based taplist.
   minimum_rancher_version: v1.1.0

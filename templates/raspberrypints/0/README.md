@@ -3,6 +3,10 @@ RaspberryPints (RPints) is a digital upgrade to the conventional chalkboard tapl
 
 #### Changelog
 
+##### v0.3.0
+* Added support for local cache of brewery images
+* storing application logos (user changeable) in configuration volume
+
 ##### v0.2.0
 * Added support to add/edit/delete breweries, useful for serving commercial kegs
 * moved all Pints data to separate directory to support storage on external volume
