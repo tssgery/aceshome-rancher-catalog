@@ -9,7 +9,7 @@ version: '2'
   questions:
     - variable: "EXPOSED_PORT"
       label: Port
-      description: "Which port should couchpotato listen on?"
+      description: "Which port should pints be exposed on?"
       default: 80
       required: true
       type: string
@@ -18,7 +18,7 @@ version: '2'
       description: "Volume on which to store configuration data"
       required: true
       type: string
-      
+
 raspberrypints:
   scale: 1
   retain_ip: true
