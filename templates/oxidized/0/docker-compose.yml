@@ -1,0 +1,7 @@
+apaxy:
+  image: oxidized/oxidized:latest
+  restart: always
+  ports:
+    - "${EXPOSED_PORT}:8888"
+  volumes:
+    - "${SHARED}:/etc/oxidized"

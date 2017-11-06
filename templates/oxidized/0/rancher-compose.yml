@@ -1,0 +1,21 @@
+version: '1'
+.catalog:
+  name: "Oxidized"
+  version: "0.1.0"
+  description: |
+    Oxidized is a network device configuration backup tool.
+    It's a RANCID replacement!
+  minimum_rancher_version: v1.1.0
+  maximum_rancher_version: v1.99.99
+  questions:
+    - variable: "EXPOSED_PORT"
+      label: Port
+      description: "Which port should Oxidized listen on?"
+      default: 8888
+      required: true
+      type: string
+    - variable: "SHARED"
+      label: Volume
+      description: "Volume which contains, or will contain Oxidized configuration"
+      required: true
+      type: string

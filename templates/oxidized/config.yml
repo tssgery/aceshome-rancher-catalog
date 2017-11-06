@@ -1,0 +1,9 @@
+name: Oxidized
+description: |
+  Oxidized is a network device configuration backup tool.
+  It's a RANCID replacement!
+version: "0.1.0"
+category: Network
+maintainer: Eric Young
+license: Apache, v2
+projectURL: https://github.com/ytti/oxidized
