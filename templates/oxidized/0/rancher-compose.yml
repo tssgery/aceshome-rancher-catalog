@@ -4,7 +4,7 @@ version: '1'
   version: "0.1.0"
   description: |
     Oxidized is a network device configuration backup tool.
-    It's a RANCID replacement!
+    It's a RANCID replacement.
   minimum_rancher_version: v1.1.0
   maximum_rancher_version: v1.99.99
   questions:
