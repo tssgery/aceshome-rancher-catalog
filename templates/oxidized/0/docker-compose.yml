@@ -1,4 +1,4 @@
-apaxy:
+oxidized:
   image: oxidized/oxidized:latest
   restart: always
   ports:
